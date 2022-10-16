@@ -26,7 +26,3 @@ insert_query = s.insert(kipchumba).values(id=1, name ="vincent", salary=60000, a
 result_proxy = connection.execute(insert_query)
 
 
-
-new_records = [{'Id':'2', 'name':'record1', 'salary':80000, 'active':False},
-               {'Id':'3', 'name':'record2', 'salary':70000, 'active':True}]
-

@@ -18,7 +18,7 @@ metadata = s.MetaData()
 kipchumba = s.Table('kipchumba', metadata, autoload=True, autoload_with=engine)
 
 # create a query
-query = s.delete(kipchumba)
+query = s.delete(kipchumba).where(kipchumba.columns.salary < 100000)
 
 
  # execute query

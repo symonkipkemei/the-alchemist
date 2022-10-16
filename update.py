@@ -18,7 +18,7 @@ metadata = s.MetaData()
 kipchumba = s.Table('kipchumba', metadata, autoload=True, autoload_with=engine)
 
 # create a query
-query = s.update(kipchumba).values(salary=100000)
+query = s.update(kipchumba).values(salary=100000).where(kipchumba.columns.id == 1)
 
 
  # execute query
